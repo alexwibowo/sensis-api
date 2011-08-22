@@ -13,7 +13,8 @@ Sensis API Model
 ---------------------
 POJO representations of the JSON result returned from SAPI. Usage:
 
-<code>
+<blockquote>
+
             java.net.URL url = new java.net.URL(getEndpoint() + "?key=" + key +
                 "&query=" + java.net.URLEncoder.encode(keyword, "UTF-8") +
                 "&location=" + java.net.URLEncoder.encode(location, "UTF-8"));
@@ -21,8 +22,7 @@ POJO representations of the JSON result returned from SAPI. Usage:
             ObjectMapper objectMapper = JacksonObjectMapperFactory.create();
             InputStream inputStream = connection.getInputStream();
             return objectMapper.readValue(inputStream, SearchResult.class);
-</code>
-
+</blockquote>
 
 Sensis API Service
 ----------------------
