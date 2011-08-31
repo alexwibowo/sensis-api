@@ -5,15 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.isolution</groupId>
     <artifactId>sensis-api</artifactId>
+    <name>Sensis API</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <inceptionYear>2011</inceptionYear>
 
+    <organization>
+    	<name>Insight Solution</name>
+    </organization>
     <properties>
         <jackson.version>1.8.5</jackson.version>
         <junit.version>4.8.2</junit.version>
         <hamcrest.version>1.1</hamcrest.version>
+        <commons-configuration.version>1.6</commons-configuration.version>
     </properties>
 
     <developers>
@@ -27,6 +32,14 @@
         <module>model</module>
         <module>service</module>
     </modules>
+    
+    <dependencies>
+    	<dependency>
+    		<groupId>junit</groupId>
+    		<artifactId>junit</artifactId>
+    		<version>${junit.version}</version>
+    	</dependency>
+    </dependencies>
 
 </project>
 

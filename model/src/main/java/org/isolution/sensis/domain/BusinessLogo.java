@@ -1,11 +1,13 @@
 package org.isolution.sensis.domain;
 
+import java.io.Serializable;
+
 /**
  * User: Alex Wibowo
  * Date: 19/08/11
  * Time: 9:21 PM
  */
-public class BusinessLogo {
+public class BusinessLogo implements Serializable{
     /**
      * The url of the logo image.
      */

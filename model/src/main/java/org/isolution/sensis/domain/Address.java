@@ -1,14 +1,16 @@
 package org.isolution.sensis.domain;
 
+import java.io.Serializable;
+
 /**
  * User: Alex Wibowo
  * Date: 19/08/11
  * Time: 9:54 PM
  */
-public class Address {
-
-    /**
-     * Address line (eg, level/unit number, street number and street name).
+public class Address implements Serializable{
+  
+	/**
+     * Address line (e.g.: level/unit number, street number and street name).
      */
     private String addressLine;
 

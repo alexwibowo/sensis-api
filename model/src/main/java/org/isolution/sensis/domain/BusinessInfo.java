@@ -1,12 +1,14 @@
 package org.isolution.sensis.domain;
 
+import java.io.Serializable;
+
 
 /**
  * User: Alex Wibowo
  * Date: 19/08/11
  * Time: 9:22 PM
  */
-public class BusinessInfo {
+public class BusinessInfo implements Serializable{
     /**
      * Legal identifier associated with the business (eg, liquor licence number).
      * Optional

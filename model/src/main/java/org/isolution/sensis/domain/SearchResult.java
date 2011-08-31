@@ -16,8 +16,14 @@ public class SearchResult {
 
     private int totalPages;
 
+    /**
+     * Response code. Indicates success, failure or partial success 
+     */
     private int code;
 
+    /**
+     * Response message. Contains an error message (if any).
+     */
     private String message;
 
     private String executedQuery;
@@ -28,11 +34,19 @@ public class SearchResult {
 
     private Date date;
 
+    /**
+     * Time taken to process the request. Reported in milliseconds.
+     */
     private int time;
 
     private List<ResultEntry> results;
 
     private List<String> details;
+    
+    /**
+     * Validation error messages (if any).
+     */
+    private List<String> validationErrors;
 
     public SearchResult() {
     }
@@ -132,4 +146,13 @@ public class SearchResult {
     public void setResults(List<ResultEntry> results) {
         this.results = results;
     }
+    
+    public void setValidationErrors(List<String> validationErrors) {
+		this.validationErrors = validationErrors;
+	}
+    
+    public List<String> getValidationErrors() {
+		return validationErrors;
+	}
+    
 }

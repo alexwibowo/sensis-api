@@ -1,11 +1,13 @@
 package org.isolution.sensis.domain;
 
+import java.io.Serializable;
+
 /**
  * User: Alex Wibowo
  * Date: 19/08/11
  * Time: 9:54 PM
  */
-public class Category {
+public class Category implements Serializable{
 
     /**
      * Unique ID associated with the category.

@@ -1,11 +1,13 @@
 package org.isolution.sensis.domain;
 
+import java.io.Serializable;
+
 /**
  * User: Alex Wibowo
  * Date: 19/08/11
  * Time: 9:54 PM
  */
-public class Contact {
+public class Contact implements Serializable{
     /**
      * The contact detail. Maybe a phone number, web address or email.
      */
