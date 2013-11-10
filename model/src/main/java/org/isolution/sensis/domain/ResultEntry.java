@@ -107,7 +107,9 @@ public class ResultEntry {
      * 	@link org.isolution.sensis.domain.OperatingHour
      * 	@link org.isolution.sensis.domain.DayType
      */
-    private Map<DayType, OperatingHour> operatingHours;
+    private Map<DayType, OperatingHour> openingHours;
+
+    private List<Image> imageGallery;
 
     public ResultEntry() {
     }
@@ -249,11 +251,21 @@ public class ResultEntry {
         this.additionalAddresses = additionalAddresses;
     }
 
-    public Map<DayType, OperatingHour> getOperatingHours() {
-        return operatingHours;
+    public Map<DayType, OperatingHour> getOpeningHours() {
+        return openingHours;
     }
 
-    public void setOperatingHours(Map<DayType, OperatingHour> operatingHours) {
-        this.operatingHours = operatingHours;
+    public void setOpeningHours(Map<DayType, OperatingHour> openingHours) {
+        this.openingHours = openingHours;
     }
+
+    public List<Image> getImageGallery() {
+        return imageGallery;
+    }
+
+    public void setImageGallery(List<Image> imageGallery) {
+        this.imageGallery = imageGallery;
+    }
+
+
 }

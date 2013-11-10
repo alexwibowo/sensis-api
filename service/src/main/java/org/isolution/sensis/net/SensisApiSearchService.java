@@ -3,7 +3,10 @@ package org.isolution.sensis.net;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
+import java.util.List;
 
+import com.google.common.base.Joiner;
+import org.apache.commons.io.IOUtils;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.isolution.sensis.cfg.SensisApiConfiguration;
 import org.isolution.sensis.domain.SearchResult;

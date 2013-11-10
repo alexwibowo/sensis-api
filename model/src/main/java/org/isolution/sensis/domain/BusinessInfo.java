@@ -13,7 +13,7 @@ public class BusinessInfo implements Serializable{
      * Legal identifier associated with the business (eg, liquor licence number).
      * Optional
      */
-    private int legalId;
+    private String legalId;
 
     /**
      * Australian Business Number
@@ -42,11 +42,11 @@ public class BusinessInfo implements Serializable{
     public BusinessInfo() {
     }
 
-    public int getLegalId() {
+    public String getLegalId() {
         return legalId;
     }
 
-    public void setLegalId(int legalId) {
+    public void setLegalId(String legalId) {
         this.legalId = legalId;
     }
 

@@ -13,7 +13,7 @@ public class SensisApiSearchServiceIntegrationTest {
 		SensisApiSearchService sensisApiSearchService = new SensisApiSearchService(
 			new FileBasedSensisApiConfiguration());
 		SearchResult cafe = sensisApiSearchService.search(
-				"malaysian restaurant", "east bentleigh");
+				"car repairer", "east bentleigh");
 		System.out.println(cafe.getCount());
 	}
 }
